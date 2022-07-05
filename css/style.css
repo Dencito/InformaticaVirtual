@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif; }
+
+.contenedor-padre {
+  z-index: 6;
+  width: 100%;
+  height: auto;
+  margin: auto; }
+  .contenedor-padre .header {
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+    z-index: 5; }
+    .contenedor-padre .header .menu {
+      background-color: #0692e3;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      box-shadow: 0 0 15px #000; }
+      .contenedor-padre .header .menu .logo {
+        height: auto; }
+        .contenedor-padre .header .menu .logo a {
+          height: auto;
+          display: block; }
+          .contenedor-padre .header .menu .logo a img {
+            width: 250px;
+            height: 50px;
+            object-fit: cover; }
+      .contenedor-padre .header .menu ul {
+        list-style: none;
+        display: flex; }
+        .contenedor-padre .header .menu ul li {
+          margin: auto 20px; }
+          .contenedor-padre .header .menu ul li a {
+            font-size: 25px;
+            font-weight: 600;
+            text-decoration: none;
+            color: #fff;
+            text-decoration: none;
+            background-image: linear-gradient(currentColor, currentColor);
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: background-size .4s; }
+            .contenedor-padre .header .menu ul li a:hover, .contenedor-padre .header .menu ul li a:focus {
+              background-size: 100% 2px; }
+  .contenedor-padre .inicio {
+    z-index: 4;
+    width: 100%;
+    height: auto;
+    min-height: 850px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25); }
+    .contenedor-padre .inicio .contenedor {
+      width: 90%;
+      height: auto;
+      margin: auto; }
+      .contenedor-padre .inicio .contenedor h1 {
+        margin: 0;
+        padding: 100px 0 20px 0;
+        font-size: 3rem;
+        font-weight: 600;
+        text-align: center; }
+      .contenedor-padre .inicio .contenedor .contenido {
+        margin: auto;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap; }
+        .contenedor-padre .inicio .contenedor .contenido .contenido-text {
+          margin: 5% auto 20px auto;
+          width: 60%; }
+          .contenedor-padre .inicio .contenedor .contenido .contenido-text p {
+            font-size: 19px;
+            font-weight: 400; }
+          .contenedor-padre .inicio .contenedor .contenido .contenido-text span {
+            font-size: 20px;
+            font-weight: 700; }
+        .contenedor-padre .inicio .contenedor .contenido .img-contenido {
+          width: 500px;
+          min-width: 200px;
+          margin: auto; }
+          .contenedor-padre .inicio .contenedor .contenido .img-contenido img {
+            border-radius: 15px;
+            width: 100%;
+            height: 500px;
+            margin-bottom: 50px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25); }
+  .contenedor-padre .consultas {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    background-color: rgba(6, 146, 227, 0.8);
+    color: #fff;
+    z-index: 3;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25); }
+    .contenedor-padre .consultas h2 {
+      margin: 0;
+      text-align: center;
+      font-size: 2.5rem;
+      padding: 30px 0 20px 0;
+      font-weight: 800; }
+    .contenedor-padre .consultas .contenido-consultas {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px; }
+      .contenedor-padre .consultas .contenido-consultas ul {
+        width: 400px;
+        min-width: 900px;
+        margin: 0 auto;
+        padding-bottom: 30px;
+        display: block; }
+        .contenedor-padre .consultas .contenido-consultas ul li {
+          margin: 10px 0;
+          font-size: 20px;
+          font-weight: 500; }
+  .contenedor-padre .footer {
+    width: 100%;
+    height: auto;
+    background: #fff5f5;
+    position: relative; }
+    .contenedor-padre .footer p {
+      text-align: center;
+      font-size: 19px;
+      font-weight: 400;
+      padding: 10px; }
+  .contenedor-padre .btn-wsp {
+    position: fixed;
+    right: 40px;
+    bottom: 20px; }
+    .contenedor-padre .btn-wsp a:hover {
+      transform: scale(1, 1.2); }
+    .contenedor-padre .btn-wsp a img {
+      width: 65px; }
+      .contenedor-padre .btn-wsp a img:hover {
+        transform: scale(1.2);
+        transition: .6s; }
+
+.nosotros {
+  width: 100%;
+  height: auto;
+  margin-top: 100px; }
+  .nosotros .contenido-nosotros {
+    width: 100%;
+    height: auto; }
+    .nosotros .contenido-nosotros h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      text-align: center; }
+    .nosotros .contenido-nosotros .contenido {
+      width: 80%;
+      height: auto;
+      margin: 50px auto 0 auto;
+      display: flex;
+      flex-wrap: wrap; }
+      .nosotros .contenido-nosotros .contenido .contenido-text {
+        margin: 10px auto;
+        width: 55%; }
+        .nosotros .contenido-nosotros .contenido .contenido-text p {
+          font-size: 19px;
+          font-weight: 400; }
+      .nosotros .contenido-nosotros .contenido .contenido-img {
+        margin: auto;
+        width: 600px; }
+        .nosotros .contenido-nosotros .contenido .contenido-img img {
+          border-radius: 15px;
+          width: 100%;
+          height: 500px;
+          margin-bottom: 50px;
+          box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25); }
+    .nosotros .contenido-nosotros .casos {
+      width: 90%;
+      margin: auto;
+      display: flex; }
+      .nosotros .contenido-nosotros .casos .caso-img {
+        margin: auto; }
+        .nosotros .contenido-nosotros .casos .caso-img img {
+          border-radius: 15px;
+          width: 80%;
+          height: 500px;
+          margin-bottom: 50px;
+          box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25); }
+      .nosotros .contenido-nosotros .casos .contenido-casos {
+        width: 50%;
+        margin: auto; }
+        .nosotros .contenido-nosotros .casos .contenido-casos .caso {
+          width: 100%;
+          padding: 20px;
+          margin: 20px;
+          border-radius: 30px;
+          background-color: rgba(6, 146, 227, 0.8);
+          box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25); }
+          .nosotros .contenido-nosotros .casos .contenido-casos .caso p {
+            font-size: 19px;
+            font-weight: 400; }
+
+.servicio .contenido-servicio {
+  width: 80%;
+  margin: auto; }
+  .servicio .contenido-servicio h1 {
+    margin: 0;
+    padding: 100px 0 20px 0;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center; }
+  .servicio .contenido-servicio .contenido {
+    margin: 0 auto 200px auto; }
+    .servicio .contenido-servicio .contenido h2 {
+      font-size: 2.2rem;
+      font-weight: 500; }
+    .servicio .contenido-servicio .contenido ul {
+      width: 80%;
+      margin: 0 auto;
+      padding-bottom: 30px;
+      display: block; }
+      .servicio .contenido-servicio .contenido ul li {
+        margin: 10px 0;
+        font-size: 20px;
+        font-weight: 500; }
+
+.contacto .contenido-contacto {
+  width: 100%;
+  height: auto; }
+  .contacto .contenido-contacto h1 {
+    margin: 0;
+    padding: 100px 0 20px 0;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center; }
+  .contacto .contenido-contacto .contenedor {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 250px; }
+    .contacto .contenido-contacto .contenedor .contenido {
+      width: 55%;
+      height: auto;
+      margin: auto;
+      display: flex;
+      flex-direction: column; }
+      .contacto .contenido-contacto .contenedor .contenido .con-contacto {
+        width: 100%; }
+        .contacto .contenido-contacto .contenedor .contenido .con-contacto h3 {
+          width: 100%;
+          font-size: 2.5rem;
+          font-weight: 500; }
+        .contacto .contenido-contacto .contenedor .contenido .con-contacto p {
+          font-size: 1.4rem;
+          font-weight: 400; }
+      .contacto .contenido-contacto .contenedor .contenido .horario {
+        margin: auto;
+        width: 100%; }
+        .contacto .contenido-contacto .contenedor .contenido .horario h3 {
+          width: 100%;
+          font-size: 2.5rem;
+          font-weight: 500; }
+        .contacto .contenido-contacto .contenedor .contenido .horario p {
+          font-size: 1.4rem;
+          font-weight: 400; }
+    .contacto .contenido-contacto .contenedor .descargas {
+      width: 460px;
+      background-color: #0692e3;
+      margin: 0 auto;
+      height: 500px;
+      padding: 15px;
+      border-radius: 30px; }
+      .contacto .contenido-contacto .contenedor .descargas h2 {
+        text-align: center;
+        color: #fff;
+        font-weight: 700;
+        font-size: 2.5rem; }
+      .contacto .contenido-contacto .contenedor .descargas .links-descargas {
+        width: 90%;
+        display: flex;
+        margin: 100px auto; }
+        .contacto .contenido-contacto .contenedor .descargas .links-descargas .teamviewer {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          margin: auto; }
+          .contacto .contenido-contacto .contenedor .descargas .links-descargas .teamviewer a {
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: #fff; }
+            .contacto .contenido-contacto .contenedor .descargas .links-descargas .teamviewer a img {
+              display: block;
+              margin-left: 23px;
+              width: 100px; }
+              .contacto .contenido-contacto .contenedor .descargas .links-descargas .teamviewer a img:hover {
+                transform: scale(0.9);
+                transition: .6s; }
+        .contacto .contenido-contacto .contenedor .descargas .links-descargas .anydesk {
+          margin: auto;
+          display: flex;
+          flex-direction: column; }
+          .contacto .contenido-contacto .contenedor .descargas .links-descargas .anydesk img {
+            width: 100px; }
+            .contacto .contenido-contacto .contenedor .descargas .links-descargas .anydesk img:hover {
+              transform: scale(0.9);
+              transition: .6s; }
+          .contacto .contenido-contacto .contenedor .descargas .links-descargas .anydesk a {
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: #fff; }
+
+/*# sourceMappingURL=style.css.map */
