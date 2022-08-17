@@ -1,0 +1,329 @@
+.contenedor-padre {
+    z-index: 6;
+    width: 100%;
+    height: auto;
+    position: relative;
+    .logoContainer {
+        width: 130px;
+        height: 130px;
+        display: block;
+        margin: 20px auto;
+        div {
+            width: auto;
+            margin: 0 auto;
+            position: relative;
+            .baseLogo {
+                width: 130px;
+                position: absolute;
+                animation: cambiarColores 3s infinite;
+                border-radius: 50%;
+                @keyframes cambiarColores {
+                    0%{
+                        box-shadow: rgb(233, 233, 233) 0 0 15px;
+                    }
+                    25%{
+                        box-shadow: rgb(9, 176, 218) 0 0 15px;
+                    }
+                    50%{
+                        box-shadow: rgb(19, 53, 204) 0 0 15px;
+                    }
+                    75%{
+                        box-shadow: rgb(140, 26, 216) 0 0 15px;
+                    }
+                    100%{
+                        box-shadow: rgb(233, 233, 233) 0 0 15px;
+                    }
+                }
+            }
+            .logo {
+                width: 50px;
+                position: absolute;
+                left: 40px;
+                top: 15px;
+                animation: moverNave 1s infinite;
+                /* animation: cambiarColores 3s infinite; */
+                @keyframes moverNave {
+                    0%{
+                        transform: rotate(1deg);
+                    }
+                    50%{
+                        transform: rotate(-1deg);
+                    }
+                    100%{
+                        transform: rotate(1deg);
+                    }
+                }
+                
+    
+            }
+            .hondas {
+                width: 70px;
+                position: absolute;
+                top: 88px;
+                left: 30px;
+                .honda1 {
+                    width: 40%;
+                    margin: 3px auto;
+                    display: block;
+                    animation: moverHonda1 4s infinite;
+                }
+                .honda2 {
+                    width: 30%;
+                    margin: 3px auto;
+                    display: block;
+                    animation: moverHonda2 4s infinite;
+                }
+    
+                .honda3 {
+                    width: 20%;
+                    margin: 3px auto;
+                    display: block;
+                    animation: moverHonda3 4s infinite;
+                }
+                @keyframes moverHonda1 {
+                    0%{
+                        opacity: 0;
+                    }
+                    25%{
+                        opacity: 1;
+                    }
+                    50%{
+                        opacity: 1;
+                    }
+                    75%{
+                        opacity: 1;
+                    }
+                    100%{
+                        opacity: 0;
+                    }
+                }
+    
+                @keyframes moverHonda2 {
+                    0%{
+                        opacity: 0;
+                    }
+                    25%{
+                        opacity: 0;
+                    }
+                    50%{
+                        opacity: 1;
+                    }
+                    75%{
+                        opacity: 1;
+                    }
+                    100%{
+                        opacity: 0;
+                    }
+                }
+                @keyframes moverHonda3 {
+                    0%{
+                        opacity: 0;
+                    }
+                    25%{
+                        opacity: 0;
+                    }
+                    50%{
+                        opacity: 0;
+                    }
+                    75%{
+                        opacity: 1;
+                    }
+                    100%{
+                        opacity: 0;
+                    }
+                }
+                
+            }
+        }
+        
+    }
+    .header {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        position: sticky;
+        top: 0;
+        box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+        z-index: 5;
+        .menu {
+            background-color: rgb(6, 146, 227);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            
+            box-shadow: 0 0 15px #000;
+            .logoTipo {
+                width: auto;
+                a {
+                    display: block;
+                    height: auto;
+                    margin: 15px;
+                    .tituloLogo {
+                        width: 220px;
+                        padding-top: 4px;
+                        display: block;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+            ul {
+                list-style: none;
+                display: flex;
+                padding-top: 10px;
+                li {
+                    margin: auto 20px;
+                    a {
+                        font-size: 25px;
+                        font-weight: 600;
+                        text-decoration: none;
+                        color: #fff;
+                        text-decoration: none;
+                        background-image: linear-gradient(currentColor, currentColor);
+                        background-position: 0% 100%;
+                        background-repeat: no-repeat;
+                        background-size: 0% 2px;
+                        transition: background-size .4s;
+                        &:hover, &:focus {
+                            background-size: 100% 2px;
+                        }
+                    }
+                    
+                }
+            }
+            #navHamburger {
+                display: none;
+            }
+            .labelNav {
+                display: none;
+                width: 30px;
+                height: 30px;
+                margin: 5px;
+                .lines {
+                    width: 100%;
+                    height: 5px;
+                    background-color: #000;
+                    margin: 3px 0;
+                }
+            }
+            
+        }
+    }
+    .footer {
+        width: 100%;
+        height: auto;
+        background: rgb(255, 245, 245);
+        position: relative;
+        p {
+            text-align: center;
+            font-size: 18px;
+            font-weight: 400;
+            padding: 10px;
+        }
+    }
+
+    .btn-wsp {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        a {
+            &:hover {
+                transform: scale(1, 1.2);
+            }
+            img {
+                width: 65px;
+                &:hover {
+                    transform: scale(1.05);
+                    transition: .6s;
+                }
+            }
+        }
+        
+    }
+}
+
+.bg-preguntas {
+    background-color: #0692e3cc;
+}
+.w-icons {
+    width: 64px;
+    height: 64px;
+}
+
+.bg-conts {
+    background-color: #0692E3;
+}
+.hover-img:hover {
+    transform: scale(1.1);
+    transition: 0.6s;
+}
+
+.medidas-textArea{
+    max-width: 500px;
+    min-height: 200px;
+    max-height: 300px;
+}
+
+.input-border {
+    border: none;
+    &:focus{
+        outline: #0501ec 2px solid;
+    }
+}
+@media screen and (max-width: 890px) {
+    .contenedor-padre{
+        .header {
+            .menu{
+                padding: 0 0 11px 0;
+                @keyframes aparecerMenu {
+                    0%{
+                        transform: translate(0,-100px);
+                    }
+                    100%{
+                        transform: translate(0, 0px);
+                    }
+                }
+                .logoTipo {
+                    display: none;
+                }
+                ul {
+                    animation: aparecerMenu 1.2s ease;
+                    display: none;
+                }
+                #navHamburger {
+                    &:checked{
+                        &~ .labelNav {
+                            position: relative;
+                            transform: translate(0, 10px);
+                            .line2 {
+                                display: none;
+                            }
+                            .line1 {
+                                background-color: #fff;
+                                transform: rotate(45deg);
+                                position: absolute;
+                            }
+                            .line3 {
+                                background-color: #fff;
+                                transform: rotate(-45deg);
+                                position: absolute;
+                            }
+                        }
+                        &~ ul {
+                            width: 100%;
+                            display: block;
+                        }
+                    }
+                }
+                .labelNav {
+                    padding: 8px 0 0 0;
+                    margin-right: 10px;
+                    display: block;
+                    
+                }
+            }
+        }
+    }
+}

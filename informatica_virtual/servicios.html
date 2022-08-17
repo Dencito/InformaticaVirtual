@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/iconos/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/style.css">
     <title>Nuestros servicios</title>
@@ -12,38 +13,60 @@
 <body>
     <div class="contenedor-padre servicio">
         <!-- ------------------ MENU ---------------------- -->
+        <a href="../index.html" class="logoContainer hover-img">
+            <div>
+                <img src="../img/logo/Base del Logo.png" alt="" class="baseLogo">
+                <img src="../img/logo/logo.png" alt="" class="logo">
+                <div class="hondas">
+                    <img src="../img/logo/honda.png" alt="" class="honda1">
+                    <img src="../img/logo/honda.png" alt="" class="honda2">
+                    <img src="../img/logo/honda.png" alt="" class="honda3">
+                </div>
+            </div>
+        </a>
         <header class="header">
             <nav class="menu">
-                <div class="logo">
-                    <a href="../index.html"><img src="../img/inicio/LogoTipo.png" alt=""></a>
+                <div class="logoTipo">
+                    <a href="../index.html">
+                        <img src="../img/logo/Titulo.png" alt="" class="tituloLogo">
+                    </a>
                 </div>
-                <ul>
+                <input type="checkbox" id="navHamburger">
+                <label for="navHamburger" class="labelNav">
+                    <div class="lines line1"></div>
+                    <div class="lines line2"></div>
+                    <div class="lines line3"></div>
+                </label>
+                <ul class="navMenu">
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="nosotros.html">Nosotros</a></li>
                     <li><a href="servicios.html">Servicios</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
+                
             </nav>
         </header>
         
-        <main class="contenido-servicio">
-            <h1>Servicios</h1>
-            <div class="contenido">
-                <h2>Nuestros servicios son:</h2>
-                <ul>
-                    <li>Administracion de la red.</li>
-                    <li>Instalacion configuracion de impresoras en red, impresoras wifi.</li>
-                    <li>Instalacion extensor WiFi (AP)</li>
-                    <li>Instalacion y formateo de PC, sistema operativo, paquete office.</li>
-                    <li>Backups de tus archivos por cambio de equipo.</li>
-                    <li>Backups programado.</li>
-                    <li>Instalacion configuracion equipo de Backup Qnap.</li>
-                    <li>Camaras de seguridad - DVR-etc.</li>
-                    <li>Mantenimiento preventivo y correctivo en la PC.</li>
-                    <li>Instalacion Antivirus.</li>
-                    <li>Trabajos de asistencia tecnica de forma remota y presencial.</li>
-                    <li>Reparacion de PC - Notebook - All in one</li>
-                </ul>
+        <main class="container-fluid my-5 h-100 py-lg-5">
+            <div class="row mt-0 pt-0 pt-lg-3 p-0 p-xxl-1">
+                <h1 class="col-12 my-5 text-center fw-bold display-4 mt-0">Servicios</h1>
+                <div class="col-12 col-sm-10 col-md-8 col-lg-8 mx-auto">
+                    <h2 class="h3 fw-bold">Nuestros servicios son:</h2>
+                    <ul>
+                        <li>Administracion de la red.</li>
+                        <li>Instalacion configuracion de impresoras en red, impresoras wifi.</li>
+                        <li>Instalacion extensor WiFi (AP)</li>
+                        <li>Instalacion y formateo de PC, sistema operativo, paquete office.</li>
+                        <li>Backups de tus archivos por cambio de equipo.</li>
+                        <li>Backups programado.</li>
+                        <li>Instalacion configuracion equipo de Backup Qnap.</li>
+                        <li>Camaras de seguridad - DVR-etc.</li>
+                        <li>Mantenimiento preventivo y correctivo en la PC.</li>
+                        <li>Instalacion Antivirus.</li>
+                        <li>Trabajos de asistencia tecnica de forma remota y presencial.</li>
+                        <li>Reparacion de PC - Notebook - All in one</li>
+                    </ul>
+                </div>
             </div>
         </main>
 
@@ -57,5 +80,6 @@
             <a href="https://api.whatsapp.com/send/?phone=549116649-8208" target="_blank"><img src="../img/iconos/icon-whatsapp.svg" alt=""></a>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

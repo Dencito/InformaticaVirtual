@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/iconos/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Informatica Virtual</title>
@@ -12,49 +13,67 @@
 <body>
     <div class="contenedor-padre">
         <!-- ------------------ MENU ---------------------- -->
+        <a href="index.html" class="logoContainer hover-img">
+            <div>
+                <img src="img/logo/Base del Logo.png" alt="" class="baseLogo">
+                <img src="img/logo/logo.png" alt="" class="logo">
+                <div class="hondas">
+                    <img src="img/logo/honda.png" alt="" class="honda1">
+                    <img src="img/logo/honda.png" alt="" class="honda2">
+                    <img src="img/logo/honda.png" alt="" class="honda3">
+                </div>
+            </div>
+        </a>
         <header class="header">
             <nav class="menu">
-                <div class="logo">
-                    <a href="index.html"><img src="img/inicio/LogoTipo.png" alt=""></a>
+                <div class="logoTipo">
+                    <a href="index.html">
+                        <img src="img/logo/Titulo.png" alt="" class="tituloLogo">
+                    </a>
                 </div>
-                <ul>
+                <input type="checkbox" id="navHamburger">
+                <label for="navHamburger" class="labelNav">
+                    <div class="lines line1"></div>
+                    <div class="lines line2"></div>
+                    <div class="lines line3"></div>
+                </label>
+                <ul class="navMenu">
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="informatica_virtual/nosotros.html">Nosotros</a></li>
                     <li><a href="informatica_virtual/servicios.html">Servicios</a></li>
                     <li><a href="informatica_virtual/contacto.html">Contacto</a></li>
                 </ul>
+                
             </nav>
         </header>
         <!-- ------------------ CONTENIDO ---------------------- -->
-        <main class="inicio">
-            <div class="contenedor">
-                <h1>Soporte Tecnico</h1>
-                <div class="contenido">
-                    <div class="contenido-text">
-                        <p>Servicio Tecnico en computación, Asistencia Tecnica de forma remota y presencial.</p>
-                        <p>En Informatica Virtual ofrecemos soporte tecnico informático presencial y de forma remota para que tu computadora este siempre en condiciones, recomendamos hacer un mantenimiento preventivo de forma periódica, lo mismo que el backup, realiza copias de tus archivos importantes, el uso constante de tu PC conectada a internet pone en riesgo la salud de la misma.</p>
-                        <span>15 años de experiencia en atencion a empresas y clientes particulares.</span>
-                    </div>
-                    <div class="img-contenido">
-                        <img src="img/inicio/ImgInicio.jpg" alt="">
-                    </div>
+        <main class="container-fluid my-5 h-100 py-5">
+            <div class="row mt-1 mt-lg-5 pt-0 pt-lg-5 p-0 p-xxl-5">
+                <h1 class="col-12 my-5 text-center fw-bold display-4 mt-0">Soporte Tecnico</h1>
+                <div class="col-12 col-md-6 col-lg-5 mx-auto pt-lg-5 mt-0 mt-md-5 mt-lg-5 mt-xl-5">
+                    <p class="h5">Servicio Tecnico en computación, Asistencia Tecnica de forma remota y presencial.</p>
+                    <p>En Informatica Virtual ofrecemos soporte tecnico informático presencial y de forma remota para que tu computadora este siempre en condiciones, recomendamos hacer un mantenimiento preventivo de forma periódica, lo mismo que el backup, realiza copias de tus archivos importantes, el uso constante de tu PC conectada a internet pone en riesgo la salud de la misma.</p>
+                    <span class="fw-bold h5">15 años de experiencia en atencion a empresas y clientes particulares.</span>
+                </div>
+                <div class="col-11 col-md-6 col-xl-5 col-xxl-4 mx-auto pt-5 pt-sm-5 mt-lg-0">
+                    <img src="img/inicio/ImgInicio.jpg" alt="" class="w-100 rounded shadow">
                 </div>
             </div>
         </main>
         <!-- ------------------ CONSULTAS ---------------------- -->
-        <section class="consultas">
-            <h2>Consultas frecuentes</h2>
-            <div class="contenido-consultas">
-                <ul>
-                    <li>Mi computadora no tiene mantenimiento desde que la compre.</li>
-                    <li>Al apagar se actualizo el sistema operativo y no inicio normal.</li>
-                    <li>¿Outlook no inicia normal? ¿No puedo ver los mails?</li>
-                    <li>¿EL navegador Chrome no abre ninguna pagina?</li>
-                    <li>¿Como puedo hacer un Backup?</li>
-                    <li>¿Como puedo pasar mis archivos de mi computadora a otra sin perder nada?</li>
-                    <li>¿Puedo tener dos sistemas operativos en una sola computadora?</li>
-                    <li>Quiero actualizar los drivers. ¿Que programa puedo descargar para hacerlo?</li>
-                    <li>¿Como puedo ver las camaras desde mi dispositivo mobile?</li>
+        <section class="container-fluid bg-preguntas mb-5 pb-5">
+            <h2 class="text-white fw-bold text-center pt-4 pb-3 display-6">Consultas frecuentes</h2>
+            <div class="row">
+                <ul class="col-11 col-sm-9 col-md-8 col-lg-7 col-xl-6 text-white h5 mx-auto">
+                    <li class="my-1">Mi computadora no tiene mantenimiento desde que la compre.</li>
+                    <li class="my-1">Al apagar se actualizo el sistema operativo y no inicio normal.</li>
+                    <li class="my-1">¿Outlook no inicia normal? ¿No puedo ver los mails?</li>
+                    <li class="my-1">¿EL navegador Chrome no abre ninguna pagina?</li>
+                    <li class="my-1">¿Como puedo hacer un Backup?</li>
+                    <li class="my-1">¿Como puedo pasar mis archivos de mi computadora a otra sin perder nada?</li>
+                    <li class="my-1">¿Puedo tener dos sistemas operativos en una sola computadora?</li>
+                    <li class="my-1">Quiero actualizar los drivers. ¿Que programa puedo descargar para hacerlo?</li>
+                    <li class="my-1">¿Como puedo ver las camaras desde mi dispositivo mobile?</li>
                 </ul>
             </div>
         </section>
@@ -67,6 +86,6 @@
             <a href="https://api.whatsapp.com/send/?phone=549116649-8208" target="_blank"><img src="img/iconos/icon-whatsapp.svg" alt=""></a>
         </div>
     </div>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
