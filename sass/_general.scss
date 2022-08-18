@@ -157,22 +157,29 @@
             box-shadow: 0 0 15px #000;
             .logoTipo {
                 width: auto;
+                &:hover {
+                    transform: scale(1.05);
+                    transition: .7s;
+                }
                 a {
                     display: block;
                     height: auto;
-                    margin: 15px;
                     .tituloLogo {
                         width: 220px;
-                        padding-top: 4px;
                         display: block;
-                        transform: scale(1.1);
+                        transform: scale(1.1) translate(35px, 18px);
                     }
+                    
+                    
                 }
+            }
+            .tituloLogoNegro{
+                display: none;
             }
             ul {
                 list-style: none;
                 display: flex;
-                padding-top: 10px;
+                padding-top: 11px;
                 li {
                     margin: auto 20px;
                     a {
